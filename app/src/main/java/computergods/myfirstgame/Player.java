@@ -12,6 +12,7 @@ public class Player extends GameObject{
     private boolean playing;
     private Animation animation = new Animation();
     private long startTime;
+    //private double edge; set up a shorthand for the boundary
 
     public Player(Bitmap res, int w, int h, int numFrames) {
 
