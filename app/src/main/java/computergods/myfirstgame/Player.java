@@ -48,11 +48,18 @@ public class Player extends GameObject{
         }
         animation.update();
 
-        if(up){
+        if(up){ //Forever stays true?
+            /*if (we are not at the boundary) {
+                we can move up; // I don't actually know how to look for the edge besides if y and x are approaching 0.
+              }
+              else {
+                  we don't;
+              }*/
             dy = (int)(dya-=1.1);
-
+            //up = false;
         }
         else{
+            //do the if again so we don't sink into oblivion
             dy = (int)(dya+=1.1);
         }
 
